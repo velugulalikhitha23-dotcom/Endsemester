@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Submissions | EduSync Admin</title>
+    <link rel="stylesheet" href="submissions.css">
+</head>
+<body>
+
+<header>
+    <h1>Project Submissions</h1>
+    <p class="subtitle">Review and Grade Student Work</p>
+</header>
+
+<nav class="section-nav">
+    <a href="admin.html">Back to Dashboard</a>
+    <a href="submissions.html" class="active">View Submissions</a>
+</nav>
+
+<main class="admin-container">
+    <div class="card">
+        <h2 class="section-title">Incoming Student Files</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Topic</th>
+                    <th>Group Name</th>
+                    <th>File Name</th>
+                    <th>Submitted On</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            
+            <tbody id="submissionsTableBody"></tbody>
+        </table>
+
+        <div id="emptyMessage" style="text-align:center; padding:20px; display:none;">
+            No submissions found yet.
+        </div>
+    </div>
+</main>
+
+<script src="submissions.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Student Project Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>EduSync</h1>
+  </header>
+
+  <section class="main">
+    <nav class="section-nav">
+      <a href="home.html">Home</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="body-content">
+      <form id="loginForm">
+        <label>Username:</label><br>
+        <input type="text" id="username" placeholder="Enter username"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password" placeholder="Enter password"><br><br>
+
+        <label>Role:</label><br>
+        <input type="radio" name="role" value="admin"> Admin
+        <input type="radio" name="role" value="student"> Student<br><br>
+
+        <input type="submit" class="btn" value="Login">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 EduSync | Designed for Smarter Learning
+  </footer>
+
+  
+  <script src="login.js"></script>
+
+</body>
+</html>

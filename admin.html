@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | EduSync</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>EduSync Admin Dashboard</h1>
+    <p class="subtitle">Manage Projects, Assign Tasks, Track Progress</p>
+  </header>
+
+  <nav class="section-nav">
+    <a href="home.html">Home</a>
+    <a href="admin.html" class="active">Dashboard</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <main>
+    <div class="admin-container">
+
+      
+      <div style="text-align:center; margin-bottom: 25px;">
+        <a href="submissions.html" class="btn-submit" style="text-decoration:none;">
+          📂 View Student Submissions
+        </a>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Assign New Project</h2>
+        <form id="projectForm">
+          <input type="text" id="title" placeholder="Project Title" required>
+          <input type="text" id="group" placeholder="Assign to Group (e.g., Group D)" required>
+
+          <select id="status" required>
+            <option value="" disabled selected>Select Current Status</option>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+
+          <textarea id="desc" placeholder="Project Description" rows="3" required></textarea>
+          <button type="submit" class="btn-submit">Assign Project</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Project Progress</h2>
+        <table id="progressTable">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Group</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EduSync | Designed for Smarter Learning</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

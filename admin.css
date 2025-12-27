@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fcfb;
+  color: #2f3e46;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 15px;
+}
+
+h1 { font-size: 22px; color: #2c786c; }
+
+.subtitle { font-size: 15px; color: #52796f; font-style: italic; }
+
+.section-nav { text-align: center; margin-bottom: 20px; }
+
+.section-nav a {
+  text-decoration: none;
+  color: #2c786c;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 15px;
+}
+
+.section-nav a.active { color: #3a9a84; border-bottom: 2px solid #3a9a84; }
+
+main { display: flex; justify-content: center; padding: 10px 20px 80px 20px; }
+
+.admin-container { width: 100%; max-width: 800px; }
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.section-title { color: #35524a; font-size: 18px; margin-bottom: 15px; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  background-color: #2c786c;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover { background-color: #3a9a84; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+
+th { background-color: #2c786c; color: white; }
+
+.delete-btn {
+    background: #e76f51;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #eee;
+}

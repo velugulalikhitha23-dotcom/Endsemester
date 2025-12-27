@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard | EduSync</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Project Portal</h1>
+        <p class="subtitle">Submit your group work for review</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Final Submission Form</h2>
+            <form id="submissionForm">
+                
+                <div class="form-group">
+                    <label>Select Your Project:</label>
+                    <select id="projectSelect" required>
+                        <option value="" disabled selected>-- Choose a Topic --</option>
+                        <option value="Solar Energy">Solar Energy</option>
+                        <option value="Global Warming">Global Warming</option>
+                        <option value="Wind Mill">Wind Mill</option>
+                        <option value="Nature">Nature</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Group Name:</label>
+                    <input type="text" id="groupName" placeholder="e.g., Group A" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Upload Project File:</label>
+                    <input type="file" id="fileInput" required>
+                </div>
+                
+                <button type="submit" class="btn">Submit to Teacher</button>
+
+
+            </form>
+        </div>
+    </main>
+
+    <script src="student.js"></script>
+</body>
+</html>

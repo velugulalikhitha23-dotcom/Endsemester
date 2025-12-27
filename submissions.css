@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9f8; /* Light mint background */
+    color: #2f3e46;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #2c786c;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c786c;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #52796f;
+    font-style: italic;
+}
+
+/* Navigation */
+.section-nav {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section-nav a {
+    text-decoration: none;
+    color: #2c786c;
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.section-nav a:hover, .section-nav a.active {
+    color: #3a9a84;
+    border-bottom: 2px solid #3a9a84;
+}
+
+/* Container and Cards */
+.admin-container, .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.section-title, h2 {
+    color: #35524a;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left: 5px solid #2c786c;
+    padding-left: 15px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"], 
+input[type="file"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5ae;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+
+.btn, button {
+    background-color: #2c786c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover, button:hover {
+    background-color: #3a9a84;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(44, 120, 108, 0.3);
+}
+
+.btn-delete {
+    background-color: #e76f51;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.btn-delete:hover {
+    background-color: #d65d40;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+th {
+    background-color: #2c786c;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+tr:hover {
+    background-color: #f9fdfc;
+}
+
+
+.status-badge {
+    padding: 4px 12px;
+    background: #e0f2ef;
+    color: #2c786c;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#statusMsg {
+    text-align: center;
+    color: #2c786c;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #52796f;
+}
